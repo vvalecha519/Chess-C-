@@ -3,6 +3,7 @@
 //include libs
 #include "player.h"
 #include "board.h"
+class Piece;
 
 class Chess{ 
 
@@ -12,7 +13,7 @@ bool curPlayer;
 
 public: 
 void replaceHuman();
-void makeMove();
+void makeMove(Piece *);
 
 };
 #endif
