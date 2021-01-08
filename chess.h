@@ -11,9 +11,11 @@ Player players[2];
 Board board;
 bool curPlayer;
 
+std::vector<std::vector<Cell>> getBoard();
+
 public: 
 void replaceHuman();
-void makeMove(Piece *);
+void makeMove(Piece *, int x, int y);
 
 };
 #endif
