@@ -7,14 +7,15 @@
 class Piece;
 class Position; 
 
-
 class Cell{ 
 std::vector<Piece *> danger;
 Piece *playerOnCell;
 std::shared_ptr<Position> position;
 
-
-
+public:
+void addDanger(Piece *);
+Piece* getPiece();
+Position *getPosition();
 
 };
 #endif
