@@ -15,7 +15,9 @@ std::vector<std::vector<Cell>> getBoard();
 
 public: 
 void replaceHuman();
-void makeMove(Piece *, int x, int y);
+//first call Player method move, to change position of player's piece if valid, then update
+//the board with the given Piece
+void makeMove(int xStart, int yStart, int xEnd, int yEnd); 
 
 };
 #endif
